@@ -1,329 +1,247 @@
+/*------------ IMPORT--------------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-}
-
+/*------------FIN IMPORT--------------*/
+/*------------ MIXIN--------------*/
+/*------------FIN MIXIN--------------*/
 /*------------GRID DIV --------------*/
 .gridiv {
-    display: grid;
-    grid-template-columns: 9.9fr 0.1fr;
-    padding: 2px;
-    justify-items: center;
-    font-size: 20px;
-}
+  grid-template-columns: 9.9fr 0.1fr;
+  padding: 2px;
+  font-size: 20px;
+  display: grid;
+  justify-items: center; }
 
 .crear-iniciar {
-    display: inline-flex;
-    padding-right: 5px;
-    justify-items: center;
-    margin-top: 3px;
-
-}
-
-.ci-grids1 {
-    color: black;
-}
-
-.ci-grids2 {
+  display: inline-flex;
+  padding-right: 5px;
+  justify-items: center;
+  margin-top: 3px; }
+  .crear-iniciar .ci-grids1 {
+    color: black; }
+  .crear-iniciar .ci-grids2 {
     padding-left: 5px;
-    color: black;
-}
+    color: black; }
 
 .rede {
-    display: flex;
-    font-size: 20px;
-    justify-content: flex-end;
-    padding-right: 5px;
-}
-
-.inst {
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-end;
+  padding-right: 5px; }
+  .rede .inst {
     margin-right: 10px;
-    color: black;
-}
-
-.face {
-    color: black;
-}
+    color: black; }
+  .rede .face {
+    color: black; }
 
 /*------------FIN GRIDS DIV--------------*/
 /*------------HEADER GRIDS--------------*/
 .gridheader {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-
-}
+  display: grid;
+  grid-template-columns: 2fr 5fr; }
 
 .logo img {
-    width: 170px;
-    height: 170px;
-}
+  width: 170px;
+  height: 170px; }
 
 .clase-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; }
 
 /*------------FIN HEADER--------------*/
-
 /*------------MAIN--------------*/
-
 .imagenes-destacadas h3 {
-    text-align: center;
-    margin: 15px 0 15px 0;
-    font-weight: 300;
-}
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-weight: 300; }
 
 .gridmain {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    justify-items: center;
-}
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-items: center; }
 
 .contenedor-imagenes {
-    width: 100%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-
-}
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px; }
 
 .contenedor-imagenes .imagenes {
-    margin: 20px 10px 20px 10px;
-    width: 80%;
-    height: 80%;
-    position: relative;
-    height: 250px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 75);
-    border-radius: 10px;
-}
+  margin: 20px 10px 20px 10px;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  height: 250px;
+  box-shadow: 0px 0px 3px 0px black;
+  border-radius: 10px; }
 
 .imagenes img {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(96, 63, 51, 0.512);
-    width: 100%;
-    height: 0%;
-    transition: .5s ease;
-    overflow: hidden;
-}
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(96, 63, 51, 0.512);
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+  overflow: hidden; }
 
 .overlay h3 {
-    color: azure;
-    font-weight: 300;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
+  color: azure;
+  font-weight: 300;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%); }
 
 .imagenes:hover .overlay {
-    height: 100%;
-    cursor: pointer;
-    border-radius: 10px;
-
-}
+  height: 100%;
+  cursor: pointer;
+  border-radius: 10px; }
 
 /*------------FIN MAIN--------------*/
-
 /*------------FOOTER--------------*/
 .pie-pag {
-    width: 100%;
-}
+  width: 100%; }
 
 .pie-pag .grupo-1 {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px; }
 
 .pie-pag .grupo-1 .box h4 {
-    margin-left: 55px;
-    display: flex;
-}
+  margin-left: 55px;
+  display: flex; }
 
 .pie-pag .grupo-1 .box p {
-    display: flex;
-    margin-left: 55px;
-}
+  display: flex;
+  margin-left: 55px; }
 
 .pie-pag .grupo-1 .medio-de-pago i {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
-}
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px; }
 
 .pie-pag .grupo-1 button {
-    margin-top: 10px;
-}
+  margin-top: 10px; }
 
 /*------------FIN FOOTER--------------*/
-
 /*------------ ULTIMO DIV--------------*/
 .pie-pagina {
-    font-size: 18px;
-    display: flex;
-    padding: 15px 10px;
-    text-align: center;
-}
+  font-size: 18px;
+  padding: 15px 10px;
+  text-align: center;
+  display: flex; }
 
 /*------------FIN ULTIMO DIV--------------*/
-
 /*------------CONTACTO--------------*/
 #contactos {
-    display: flex;
-    justify-content: space-around;
-    height: 70vh;
-    margin-top: 100px;
-
-}
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+  margin-top: 100px; }
 
 .contacto h3 {
-    font-size: 20px;
-    position: relative;
-    left: 8px;
-    bottom: 5px;
-}
+  font-size: 20px;
+  position: relative;
+  left: 8px;
+  bottom: 5px; }
 
 .redes-sociales h3 {
-    
-    position: relative;
-    left: 10px;
-    font-size: 20px;
-    bottom: 5px;
-}
+  position: relative;
+  left: 10px;
+  font-size: 20px;
+  bottom: 5px; }
 
-.instagram-logo {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-
-}
-
-.in {
+.instagram-logo, .facebook-logo, .email-logo {
+  margin-top: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; }
+  .instagram-logo .in, .facebook-logo .in, .email-logo .in {
     margin-left: 15px;
-    color: black;
-
-}
+    color: black; }
 
 .facebook-logo {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.fac {
+  display: flex;
+  justify-content: center; }
+  .facebook-logo .fac {
     margin-left: 15px;
-    color: black;
-}
+    color: black; }
 
 .email-logo {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-}
+  display: flex;
+  justify-content: center; }
+  .email-logo .el {
+    margin-left: 15px;
+    color: black; }
 
-.el {
-   margin-left: 15px;
-   color: black;
-}
-.em{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-}
+.em {
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center; }
 
 /*------------ FIN CONTACTO--------------*/
 /*------------PREGUNTAS FRECUENTES--------------*/
 .preguntas-frecuentes-logo {
-    height: 39.5vh;
-    margin: 10px;
-}
+  height: 39.5vh;
+  margin: 10px; }
 
 .preguntas-frecuentes-logo h3 {
-    text-align: center;
-    margin: 15px 0 15px 0;
-    font-weight: 300;
-}
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-weight: 300; }
 
 .parrafo-1 {
-    position: relative;
-    top: 20px;
-}
-.parrafo-2 i {
-    font-size: 25px;
-    padding: 10px;
-    position: relative;
-    top: 20px;
-}
-.preguntas-frecuentes{
-    position: relative;
-    bottom: 70px;
-    margin: 10px;
+  position: relative;
+  top: 20px; }
 
-}
+.parrafo-2 i {
+  font-size: 25px;
+  padding: 10px;
+  position: relative;
+  top: 20px; }
+
+.preguntas-frecuentes {
+  position: relative;
+  bottom: 80px;
+  margin: 10px; }
 
 /*------------ FIN PREGUNTAS FRECUENTES--------------*/
 /*------------QUIENES SOMOS --------------*/
 .quienes-somos {
-    
-    height: 68.2vh;
-}
+  height: 68.2vh; }
 
 .quienes-somos h3 {
-    text-align: center;
-    margin: 15px 0 15px 0;
-    font-weight: 300;
-}
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-weight: 300; }
 
 .p p {
-    text-align: center;
-    margin-top: 40px;
-    padding: 0 1rem;
-}
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 1rem; }
 
 /*------------Quienes Somos--------------*/
-/*------------MEDIA QUERIES--------------*/
-@media screen and (max-width: 1200px) {
-    .clase-body{
-        background-color: aqua;
-    }
-
-}
-@media screen and (max-width: 1024px){
-    body{
-        background-color: blue;
-    }
-}
-@media screen and (max-width: 768px){
-
-}
-@media screen and (max-width: 350px){
-
-}
