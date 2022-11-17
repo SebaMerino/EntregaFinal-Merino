@@ -13,7 +13,8 @@
   padding: 2px;
   font-size: 25px;
   display: grid;
-  justify-items: center; }
+  justify-items: center;
+  background-color: #d2bead7c; }
 
 .crear-iniciar {
   display: inline-flex;
@@ -42,6 +43,12 @@
 .gridheader {
   display: grid;
   grid-template-columns: 2fr 5fr; }
+
+.navbar-brand:hover {
+  text-decoration: underline; }
+
+.nav-link:hover {
+  text-decoration: underline; }
 
 .logo img {
   width: 170px;
@@ -152,7 +159,8 @@
   font-size: 18px;
   padding: 15px 10px;
   text-align: center;
-  display: flex; }
+  display: flex;
+  background-color: #d2bead7c; }
 
 /*------------FIN ULTIMO DIV--------------*/
 /*------------CONTACTO--------------*/
